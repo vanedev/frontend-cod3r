@@ -10,3 +10,7 @@
     padding-right: 10px; /** espassamento no icons**/
     
 }
+.content{
+    padding: 16px;
+    background-color: #fff;
+}
