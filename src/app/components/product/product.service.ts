@@ -30,6 +30,16 @@ read(): Observable<product[]>{
   return this.http.get<product[]>(this.baseUrl)
 }
 
+readById(id: string):Observable<product> {
+  const url = `${this.baseUrl}/${id}`
+  return this.http.get<product>(url)
+}
+
+update(product:product): Observable<product>{
+  const url = `${this.baseUrl}/${product.id}`
+  return this.http.put<product>(url, product)
+}
+
   }
 
 
